@@ -1,6 +1,6 @@
 :root{
   --text-color: white;
-  --bg-url: url(../assets/bg-dark-mobile.jpg);
+  --bg-url: url(../assets/bg-dark.jpg);
   --bg-switch-url: url(../assets/moon-stars.svg);
   --stroke-color: rgba( 255, 255, 255, .5);
   --surface-color: rgba( 255, 255, 255, .1);
@@ -10,7 +10,7 @@
 
 .light{
   --text-color: black;
-  --bg-url: url(../assets/bg-light-mobile.jpg);
+  --bg-url: url(../assets/bg-light.jpg);
   --bg-switch-url: url(../assets/sun.svg);
   --stroke-color: rgba(0, 0, 0, 0.5);
   --surface-color: rgba(0, 0, 0, 0.05);
@@ -32,6 +32,7 @@ body{
   background-repeat: no-repeat;
   background-position: top center;
   background-size: cover;
+  height: 100vh;
 }
 
 #container{
@@ -163,4 +164,14 @@ footer{
 
 footer p{
   font-size: 14px;
+}
+
+@media (min-width:700px) {
+  :root{
+    --bg-url: url(../assets/bg-dark-mobile.jpg);
+  }
+
+  .light{
+    --bg-url: url(../assets/bg-light-mobile.jpg);
+  }
 }
