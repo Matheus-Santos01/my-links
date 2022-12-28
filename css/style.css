@@ -81,10 +81,22 @@ body{
   cursor: pointer;
 
   animation: slide-back 200ms;
+  outline: 8px solid transparent;
+}
+
+.switch button:hover{
+  outline-color: var(--surface-color);
+  transition: 200ms;
 }
 
 .light .switch button{
+  outline: 8px solid transparent;
   animation: slide-in 200ms forwards;
+}
+
+.light .switch button:hover{
+  outline-color: var(--surface-color);
+  transition: 200ms;
 }
 
 .switch .track{
